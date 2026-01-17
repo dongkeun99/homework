@@ -1,1 +1,73 @@
-/* 여기에 스타일을 구현해 주세요 */
+.female1,
+.male1,
+.female2,
+.male2,
+.female3,
+.male3,
+.female4,
+.male4 {
+  width: 64px;
+  height: 64px;
+  margin: 10px;
+}
+
+.woman {
+  margin-top: 260px;
+}
+
+.woman,
+.man {
+  display: flex;
+  margin-left: 590px;
+}
+
+img {
+  border-radius: 100%;
+}
+
+.square1,
+.square2,
+.square3,
+.square4,
+.square5,
+.square6,
+.square7,
+.square8 {
+  width: 20px;
+  height: 20px;
+  background-color: #dbdbdb;
+  margin-top: 50px;
+  border-radius: 100%;
+  position: absolute;
+  left: 650px;
+  top: 265px;
+}
+
+.square5,
+.square6,
+.square7,
+.square8 {
+  top: 350px;
+}
+
+.square2,
+.square6 {
+  left: 735px;
+}
+
+.square3,
+.square7 {
+  left: 820px;
+}
+
+.square4,
+.square8 {
+  left: 905px;
+}
+
+.square2,
+.square4,
+.square5,
+.square6 {
+  background-color: #4cfe88;
+}
