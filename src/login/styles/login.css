@@ -62,6 +62,10 @@
       margin-block-start: 5rem;
       inline-size: 22.5rem;
     }
+
+    @media (width < 768px) {
+      margin-inline-end: -16rem;
+    }
   }
 
   .secu {
@@ -75,7 +79,7 @@
     @media (width >= 768px) {
       display: flex;
       margin-block: -1.5rem;
-      margin-inline-start: 21rem;
+      margin-inline-start: 20.5rem;
 
       .onoff {
         margin-inline-start: 0.5rem;
