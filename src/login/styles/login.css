@@ -1,1 +1,90 @@
-/* CSS를 활용하여 레이아웃 및 스타일링을 완성해주세요 */
+.page {
+  --basic-color: #121212;
+
+  color: var(--basic-color);
+  display: flex;
+  align-content: center;
+  align-items: center;
+  flex-flow: wrap column;
+  margin-block-start: 8%;
+
+  .naver {
+    block-size: 3rem;
+  }
+
+  .pi {
+    margin-inline-start: -2.5rem;
+    margin-block: 4.5rem;
+
+    .id,
+    .pw {
+      font-size: 0.875rem;
+      background: #fff;
+      color: var(--basic-color);
+      display: flex;
+      flex-flow: wrap column;
+      margin-block: 1rem;
+      inline-size: 100%;
+      block-size: 2.8125rem;
+      border: 1px solid #dadada;
+      justify-content: center;
+      margin-inline-end: 14rem;
+      padding-inline-start: 1rem;
+    }
+  }
+
+  .login {
+    display: flex;
+    background: #03cf5d;
+    font-size: 1rem;
+    block-size: 2.8125rem;
+    color: #fff;
+    margin-block: -4rem;
+    inline-size: 27.2rem;
+    margin-inline-start: -1.2rem;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #03cf5d;
+  }
+
+  .state {
+    display: flex;
+    margin-inline-end: -10rem;
+    margin-block-start: 5rem;
+
+    .check {
+      margin-right: 0.3125rem;
+    }
+
+    @media (width >= 768px) {
+      display: flex;
+      margin-inline-start: -16rem;
+      margin-block-start: 5rem;
+      inline-size: 22.5rem;
+    }
+  }
+
+  .secu {
+    font-size: 1rem;
+    color: var(--basic-color);
+
+    .onoff {
+      color: gray;
+    }
+
+    @media (width >= 768px) {
+      display: flex;
+      margin-block: -1.5rem;
+      margin-inline-start: 21rem;
+
+      .onoff {
+        margin-inline-start: 0.5rem;
+      }
+    }
+
+    @media (width < 768px) {
+      display: none;
+      margin-inline-start: 2rem;
+    }
+  }
+}
