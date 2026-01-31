@@ -1,3 +1,64 @@
-@import "./reset.css";
-@import "./theme.css";
-@import "./base.css";
+@import './reset.css';
+@import './theme.css';
+@import './base.css';
+
+.apple {
+  .ipad-pro {
+    background: url(../products/ipad_pro.jpeg) no-repeat;
+    background-size: cover;
+    background-position: top center;
+    min-height: 100vh;
+    display: grid;
+    justify-content: center;
+    color: var(--white);
+
+    .ipad {
+      background: pink;
+      font-weight: 900;
+      font-size: var(--large-text);
+      padding: var(--x-small-spacing);
+      padding-inline-start: calc(var(--base-spacing) * 2);
+      margin-block-end: var(--small-spacing);
+    }
+
+    strong {
+      background: aqua;
+      font-weight: 800;
+      font-size: var(--base-text);
+      line-height: var(--line-normal);
+      margin-inline: var(--small-spacing);
+      padding-inline-start: var(--base-spacing);
+    }
+
+    .launch {
+      background: lavender;
+      color: var(--gray);
+      font-size: var(--small-text);
+      margin-block-start: var(--small-spacing);
+      padding-inline-start: calc(var(--small-spacing) * 3.5);
+    }
+
+    .more,
+    .price {
+      color: var(--white);
+      background: var(--blue-100);
+      font-size: var(--xx-small-text);
+      border: 0;
+      border-radius: 15px;
+      margin: var(--x-small-spacing);
+    }
+
+    .more {
+      margin-inline-end: calc(var(--extra-large-spacing) * 2);
+      margin-block-start: calc(var(--base-spacing));
+    }
+
+    .price {
+      color: var(--blue-100);
+      background: var(--black);
+      border: 1px solid currentColor;
+      margin-inline-start: calc(var(--extra-large-spacing) * 2);
+      margin-block-end: calc(var(--extra-large-spacing) * 7);
+    }
+  }
+}

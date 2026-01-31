@@ -1,3 +1,405 @@
-@import "./card-component.css";
+@import './card-component.css';
 
-/* 카드 레이아웃 */
+.cards {
+  .ipad-pro {
+    background: url(../products/ipad_pro.jpeg) no-repeat;
+    background-size: cover;
+    background-position: top center;
+    min-height: 80vh;
+    display: grid;
+    justify-content: center;
+    color: var(--white);
+    margin-block-end: var(--base-spacing);
+
+    .ipad {
+      font-weight: 900;
+      font-size: var(--large-text);
+      padding: var(--x-small-spacing);
+      padding-inline-start: calc(var(--base-spacing) * 2);
+      margin-block-end: var(--small-spacing);
+    }
+
+    strong {
+      font-weight: 800;
+      font-size: var(--base-text);
+      line-height: var(--line-normal);
+      margin-inline: var(--small-spacing);
+      padding-inline-start: var(--base-spacing);
+    }
+
+    .launch {
+      color: var(--gray);
+      font-size: var(--small-text);
+      margin-block-start: var(--small-spacing);
+      padding-inline-start: calc(var(--small-spacing) * 3.5);
+    }
+
+    .more,
+    .price {
+      color: var(--white);
+      background: var(--blue-100);
+      font-size: var(--xx-small-text);
+      border: 0;
+      border-radius: 15px;
+      margin: var(--x-small-spacing);
+    }
+
+    .more {
+      margin-inline-end: calc(var(--extra-large-spacing) * 2);
+      margin-block-start: calc(var(--base-spacing));
+    }
+
+    .price {
+      color: var(--blue-100);
+      background: var(--black);
+      border: 1px solid currentColor;
+      margin-inline-start: calc(var(--extra-large-spacing) * 2);
+      margin-block-end: calc(var(--extra-large-spacing) * 7);
+    }
+  }
+
+  .ipad-air {
+    background: url(../products/ipad_air.jpeg) no-repeat;
+    background-size: cover;
+    background-position: top center;
+    min-height: 80vh;
+    display: grid;
+    justify-content: center;
+    color: var(--black);
+    margin-block-end: var(--base-spacing);
+
+    .ipad {
+      font-weight: 900;
+      font-size: var(--large-text);
+      padding: var(--x-small-spacing);
+      padding-inline-start: calc(var(--base-spacing) * 4);
+      margin-block-end: var(--small-spacing);
+    }
+
+    strong {
+      font-weight: 800;
+      font-size: var(--base-text);
+      line-height: var(--line-normal);
+      margin-inline: var(--small-spacing);
+      padding-inline: var(--base-spacing);
+    }
+
+    .launch {
+      color: var(--gray);
+      font-size: var(--small-text);
+      margin-block-start: var(--small-spacing);
+      padding-inline-start: calc(var(--small-spacing) * 6);
+    }
+
+    .more,
+    .price {
+      color: var(--white);
+      background: var(--blue-100);
+      font-size: var(--xx-small-text);
+      border: 0;
+      border-radius: 15px;
+      margin: var(--x-small-spacing);
+    }
+
+    .more {
+      margin-inline-end: calc(var(--extra-large-spacing) * 2.5);
+      margin-block-start: calc(var(--base-spacing));
+    }
+
+    .price {
+      color: var(--blue-100);
+      background: var(--black);
+      border: 1px solid currentColor;
+      margin-inline-start: calc(var(--extra-large-spacing) * 2.5);
+      margin-block-end: calc(var(--extra-large-spacing) * 7);
+    }
+  }
+
+  .iphone-pro {
+    background: url(../products/iphone15_pro.jpeg) no-repeat;
+    background-size: cover;
+    background-position: top center;
+    min-height: 80vh;
+    display: grid;
+    justify-content: center;
+    color: var(--white);
+    margin-block-end: var(--base-spacing);
+
+    @media (width >= 1024px) {
+      background: url(../products/ipad_pro_wide.jpeg);
+    }
+
+    .ipad {
+      font-weight: 900;
+      font-size: var(--large-text);
+      padding: var(--x-small-spacing);
+      padding-inline-start: calc(var(--base-spacing) * 2.5);
+      margin-block-end: var(--small-spacing);
+    }
+
+    strong {
+      font-weight: 800;
+      font-size: var(--base-text);
+      line-height: var(--line-normal);
+      margin-inline: var(--small-spacing);
+      padding-inline: var(--base-spacing);
+    }
+
+    .launch {
+      color: var(--gray);
+      font-size: var(--small-text);
+      margin-block-start: var(--small-spacing);
+      padding-inline-start: calc(var(--small-spacing) * 6);
+    }
+
+    .more,
+    .price {
+      color: var(--white);
+      background: var(--blue-100);
+      font-size: var(--xx-small-text);
+      border: 0;
+      border-radius: 15px;
+      margin: var(--x-small-spacing);
+    }
+
+    .more {
+      margin-inline-end: calc(var(--extra-large-spacing) * 3);
+      margin-block-start: calc(var(--base-spacing));
+    }
+
+    .price {
+      color: var(--blue-100);
+      background: var(--black);
+      border: 1px solid currentColor;
+      margin-inline-start: calc(var(--extra-large-spacing) * 3);
+      margin-block-end: calc(var(--extra-large-spacing) * 7);
+    }
+  }
+
+  .iphone-15 {
+    background: url(../products/iphone15.jpeg) no-repeat;
+    background-size: cover;
+    background-position: top center;
+    min-height: 80vh;
+    display: grid;
+    justify-content: center;
+    color: var(--black);
+    margin-block-end: var(--base-spacing);
+
+    .ipad {
+      font-weight: 900;
+      font-size: var(--large-text);
+      padding: var(--x-small-spacing);
+      padding-inline-start: calc(var(--base-spacing) * 3.3);
+      margin-block-end: var(--small-spacing);
+    }
+
+    strong {
+      font-weight: 800;
+      font-size: var(--base-text);
+      line-height: var(--line-normal);
+      margin-inline: var(--small-spacing);
+      padding-inline: var(--extra-large-spacing);
+    }
+
+    .launch {
+      color: var(--gray);
+      font-size: var(--small-text);
+      margin-block-start: var(--small-spacing);
+      padding-inline-start: calc(var(--small-spacing) * 6);
+    }
+
+    .more,
+    .price {
+      color: var(--white);
+      background: var(--blue-100);
+      font-size: var(--xx-small-text);
+      border: 0;
+      border-radius: 15px;
+      margin: var(--x-small-spacing);
+    }
+
+    .more {
+      margin-inline-end: calc(var(--extra-large-spacing) * 2.5);
+      margin-block-start: calc(var(--base-spacing));
+    }
+
+    .price {
+      color: var(--blue-100);
+      background: var(--black);
+      border: 1px solid currentColor;
+      margin-inline-start: calc(var(--extra-large-spacing) * 2.5);
+      margin-block-end: calc(var(--extra-large-spacing) * 7);
+    }
+  }
+
+  .watch {
+    background: url(../products/apple_watch.jpeg) no-repeat;
+    background-size: cover;
+    background-position: top center;
+    min-height: 80vh;
+    display: grid;
+    justify-content: center;
+    color: var(--white);
+    margin-block-end: var(--base-spacing);
+
+    .ipad {
+      font-weight: 900;
+      font-size: var(--large-text);
+      padding: var(--x-small-spacing);
+      padding-inline-start: calc(var(--base-spacing) * 9.2);
+      margin-block-end: var(--small-spacing);
+    }
+
+    strong {
+      font-weight: 800;
+      font-size: var(--base-text);
+      line-height: var(--line-normal);
+      margin-inline: var(--small-spacing);
+      padding-inline: calc(var(--large-spacing) * 2);
+    }
+
+    .launch {
+      color: var(--gray);
+      font-size: var(--small-text);
+      margin-block-start: var(--small-spacing);
+      padding-inline-start: calc(var(--small-spacing) * 6);
+    }
+
+    .more,
+    .price {
+      color: var(--white);
+      background: var(--blue-100);
+      font-size: var(--xx-small-text);
+      border: 0;
+      border-radius: 15px;
+      margin: var(--x-small-spacing);
+    }
+
+    .more {
+      margin-inline: calc(var(--large-spacing) * 2) calc(var(--extra-large-spacing) * 4.5);
+      margin-block-start: calc(var(--base-spacing));
+    }
+
+    .price {
+      color: var(--blue-100);
+      background: var(--black);
+      border: 1px solid currentColor;
+      margin-inline: calc(var(--extra-large-spacing) * 4.5) calc(var(--large-spacing) * 2);
+      margin-block-end: calc(var(--extra-large-spacing) * 7);
+    }
+  }
+
+  .macbook-air {
+    background: url(../products/macbook_air.jpeg) no-repeat;
+    background-size: cover;
+    background-position: top center;
+    min-height: 80vh;
+    display: grid;
+    justify-content: center;
+    color: var(--black);
+    margin-block-end: var(--base-spacing);
+
+    .ipad {
+      font-weight: 900;
+      font-size: var(--large-text);
+      padding: var(--x-small-spacing);
+      padding-inline-start: calc(var(--base-spacing) * 9);
+      margin-block-end: var(--small-spacing);
+    }
+
+    strong {
+      font-weight: 800;
+      font-size: var(--base-text);
+      line-height: var(--line-normal);
+      margin-inline: var(--small-spacing);
+      padding-inline: calc(var(--large-spacing) * 3);
+    }
+
+    .launch {
+      color: var(--gray);
+      font-size: var(--small-text);
+      margin-block-start: var(--small-spacing);
+      padding-inline-start: calc(var(--small-spacing) * 6);
+    }
+
+    .more,
+    .price {
+      color: var(--white);
+      background: var(--blue-100);
+      font-size: var(--xx-small-text);
+      border: 0;
+      border-radius: 15px;
+      margin: var(--x-small-spacing);
+    }
+
+    .more {
+      margin-inline: calc(var(--large-spacing) * 2.5) calc(var(--extra-large-spacing) * 5);
+      margin-block-start: calc(var(--base-spacing));
+    }
+
+    .price {
+      color: var(--blue-100);
+      background: var(--black);
+      border: 1px solid currentColor;
+      margin-inline: calc(var(--extra-large-spacing) * 4.5) calc(var(--large-spacing) * 3);
+      margin-block-end: calc(var(--extra-large-spacing) * 7);
+    }
+  }
+
+  .airpods-pro {
+    background: url(../products/airpods_pro.jpeg) no-repeat;
+    background-size: cover;
+    background-position: top center;
+    min-height: 80vh;
+    display: grid;
+    justify-content: center;
+    color: var(--white);
+
+    .ipad {
+      font-weight: 900;
+      font-size: var(--large-text);
+      padding: var(--x-small-spacing);
+      padding-inline-start: calc(var(--base-spacing) * 10);
+      margin-block-end: var(--small-spacing);
+    }
+
+    strong {
+      font-weight: 800;
+      font-size: var(--base-text);
+      line-height: var(--line-normal);
+      margin-inline: var(--small-spacing);
+      padding-inline: calc(var(--large-spacing) * 4);
+    }
+
+    .launch {
+      color: var(--gray);
+      font-size: var(--small-text);
+      margin-block-start: var(--small-spacing);
+      padding-inline-start: calc(var(--small-spacing) * 6);
+    }
+
+    .more,
+    .price {
+      color: var(--white);
+      background: var(--blue-100);
+      font-size: var(--xx-small-text);
+      border: 0;
+      border-radius: 15px;
+      margin: var(--x-small-spacing);
+    }
+
+    .more {
+      margin-inline: calc(var(--large-spacing) * 2.5) calc(var(--extra-large-spacing) * 5);
+      margin-block-start: calc(var(--base-spacing));
+    }
+
+    .price {
+      color: var(--blue-100);
+      background: var(--black);
+      border: 1px solid currentColor;
+      margin-inline: calc(var(--extra-large-spacing) * 4.5) calc(var(--large-spacing) * 3);
+      margin-block-end: calc(var(--extra-large-spacing) * 7);
+    }
+  }
+}
