@@ -126,7 +126,7 @@
     margin-block-end: var(--base-spacing);
 
     @media (width >= 1024px) {
-      background: url(../products/ipad_pro_wide.jpeg);
+      background: url(../products/iphone15_pro_wide.jpeg);
     }
 
     .ipad {
